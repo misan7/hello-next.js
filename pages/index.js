@@ -2,10 +2,16 @@ import Link from "next/link";
 
 const Index = () => (
   <div>
+    {/* the style prop on next/link has no effect */}
     <Link href="/about">
-      <a>About Page</a>
+      <a style={{ fontSize: 30 }}>About Page</a>
     </Link>
-    <p>Hello Next.js</p>
+    <Link href="/about">
+      <p>Hello Next.js</p>
+    </Link>
+    <Link href="/about">
+      <button>Go to About Page</button>
+    </Link>
   </div>
 );
 
